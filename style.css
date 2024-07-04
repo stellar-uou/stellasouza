@@ -1,0 +1,334 @@
+/* Estilo Geral */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@font-face {
+    font-family: 'round';
+    src: url(melon-slices/Melon-Slices.otf)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "round", sans-serif;
+}
+
+body{
+    background-color: #34344E;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-contato button {
+    padding: 10px 40px;
+    font-size: 24px;
+    background-color: #89A7B1;
+    border-radius: 75px;
+    border: 0;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    margin: 40px 4%;
+}
+
+h2.titulo span {
+    color: #89A7B1;
+}
+
+button:hover, form .button-enviar input[type=submit]:hover {
+    box-shadow: 0px 0px 8px #89a7b1a1;
+    transform: scale(1.05);
+}
+
+/* Estilo do cabeçalho */
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #ffff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    font-size: 24px;
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+.nome-logo {
+    font-size: 30px;
+    color: #89A7B1;
+    text-align: center;
+}
+
+/* Estilo topo site */
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site.flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #ffff;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span {
+    color: #89A7B1;
+    font-size: 50px;
+}
+
+.topo-do-site .texto-topo-site p {
+    color: #89A7B1;
+    margin: 40px 200px 40px 0;
+    font-size: 22px;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+.topo-do-site .imagem-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* Estilo sobre mim */
+
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .texto-sobre {
+    color: #89A7B1;
+}
+
+.sobre .texto-sobre h2 {
+    font-size: 40px;
+    color: #ffff;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .texto-sobre h2 span {
+    color: #89A7B1;
+    display: block;
+}
+
+.sobre .texto-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .texto-sobre .button-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #89A7B1;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.2s;
+}
+
+/* Estilo conhecimentos */
+
+section .conhecimentos {
+    padding: 40px 4%;
+}
+
+section.conhecimentos .flex {
+    gap: 60px;
+}
+
+.conhecimentos .conhecimentos-box {
+    color: #ffff;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+.conhecimentos .conhecimentos-box img {
+    width: 50px;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conhecimentos .conhecimentos-box h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #34344E;
+}
+
+.conhecimentos .conhecimentos-box p {
+    font-size: 18px;
+    text-align: center;
+    color: #34344E;
+}
+
+.conhecimentos .conhecimentos-box:hover {
+    box-shadow: 0px 0px 8px #7b7bb8;
+    background-color: #7b7bb8;
+    transform: scale(1.05);
+    transition: 0.5s;
+}    
+
+.flex .conhecimentos-box {
+    padding: 20px;
+    flex: 1;
+}
+
+#mostrar{
+    display: none;
+    transition: all 0.5s;
+}
+
+/* Estilo dos projetos */
+
+section.projetos {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #2a2a36c0;
+}
+
+section.projetos .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-projetos {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-projetos:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008f;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* Estilo formulário */
+
+section.formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #313163d8;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #ffff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 180px;
+}
+
+form .button-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .button-enviar input[type=submit] {
+    width: 100px;
+    background-color: #89A7B1;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 40px;
+}
