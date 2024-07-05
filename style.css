@@ -6,14 +6,14 @@
     src: url(melon-slices/Melon-Slices.otf)
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "round", sans-serif;
 }
 
-body{
+body {
     background-color: #34344E;
     height: 100vh;
 }
@@ -49,7 +49,8 @@ h2.titulo span {
     color: #89A7B1;
 }
 
-button:hover, form .button-enviar input[type=submit]:hover {
+button:hover,
+form .button-enviar input[type=submit]:hover {
     box-shadow: 0px 0px 8px #89a7b1a1;
     transform: scale(1.05);
 }
@@ -60,11 +61,12 @@ header {
     padding: 40px 4%;
 }
 
-header > .interface {
+header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 header a {
     color: #7d7d7d;
     text-decoration: none;
@@ -106,7 +108,7 @@ section.topo-do-site.flex {
     gap: 90px;
 }
 
-.topo-do-site h1{
+.topo-do-site h1 {
     color: #ffff;
     font-size: 38px;
     line-height: 40px;
@@ -127,6 +129,7 @@ section.topo-do-site.flex {
     0% {
         top: 0;
     }
+
     100% {
         top: 30px;
     }
@@ -169,7 +172,7 @@ section.sobre .flex {
     text-align: justify;
 }
 
-.sobre .texto-sobre .button-social button {
+.button-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -225,14 +228,14 @@ section.conhecimentos .flex {
     background-color: #7b7bb8;
     transform: scale(1.05);
     transition: 0.5s;
-}    
+}
 
 .flex .conhecimentos-box {
     padding: 20px;
     flex: 1;
 }
 
-#mostrar{
+#mostrar {
     display: none;
     transition: all 0.5s;
 }
@@ -241,7 +244,8 @@ section.conhecimentos .flex {
 
 section.projetos {
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #2a2a36c0;
+    background-color: #313163d8;
+    box-shadow: 0 0 40px 10px #313163d8;
 }
 
 section.projetos .flex {
@@ -302,7 +306,8 @@ form {
     margin-top: 40px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     background-color: #313163d8;
     border: 0;
@@ -331,4 +336,153 @@ form .button-enviar input[type=submit] {
     cursor: pointer;
     transition: .2s;
     border-radius: 40px;
+}
+
+/* Estilo rodapé */
+
+footer {
+    padding: 40px 4%;
+    background-color: #2a2a36c0;
+    box-shadow: 0 0 40px 10px #2a2a36c0;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+footer .line-footer-2 {
+    border-top: 2px solid #89A7B1;
+    line-height: 60px;
+}
+
+footer .line-footer-2 p i {
+    color: #89A7B1;
+    font-size: 22px;
+}
+
+footer .line-footer-2 p a {
+    color: #89A7B1;
+    text-decoration: none;
+}
+
+.nome-footer {
+    font-size: 22px;
+    color: #89A7B1;
+    text-align: center;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1020px) {
+
+    /* Classes gerais */
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .button-social button{
+        width: 40px;
+        height: 40px;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30;
+    }
+
+    /* Cabeçalho */
+
+    .nome-logo {
+        flex: auto;
+    }
+
+    .menu-desktop,
+    .button-contato {
+        display: none;
+    }
+
+    /* Topo do site */
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    section.topo-do-site.flex {
+        gap: 40px;
+    }
+
+    .topo-do-site h1 {
+        font-size: 39px;
+    }
+
+    .topo-do-site .imagem-topo-site img {
+        width: 100%;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    /* Sobre mim */
+
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .texto-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .button-social{
+        text-align: center;
+    }
+
+    .imagem-sobre img {
+        width: 100%;
+    }
+
+    /* Conhecimentos */
+
+    section .conhecimentos {
+        padding: 40px 8%;
+    }
+
+    /* Projetos */
+
+    section.projetos {
+        padding: 80px 8%;
+    }
+
+    section.projetos .flex {
+        gap: 60px;
+    }
+
+    .img-projetos {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    /* Rodapé */
+
+    footer .flex {
+        flex-direction: column;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+    footer .line-footer-2 {
+        line-height: 40px;
+        margin-top: 20px;
+    }
+
 }
