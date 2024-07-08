@@ -97,6 +97,7 @@ header nav.menu-desktop ul li {
 .nome-logo {
     font-size: 30px;
     color: #89A7B1;
+    text-align: center;
 }
 
 /* Estilo menu mobile */
