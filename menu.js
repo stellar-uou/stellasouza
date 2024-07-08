@@ -27,3 +27,10 @@ const backToTop = () => {
 window.addEventListener('scroll', function () {
     backToTop()
 })
+
+function scrollToContato() {
+    const contatoSection = document.getElementById('contato');
+    contatoSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+document.querySelector('.button-contato button').addEventListener('click', scrollToContato);
