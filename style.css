@@ -97,7 +97,7 @@ header nav.menu-desktop ul li {
 .nome-logo {
     font-size: 30px;
     color: #89A7B1;
-    text-align: center;
+    padding: 40px 4%;
 }
 
 /* Estilo menu mobile */
@@ -361,6 +361,13 @@ section.projetos .flex {
 
 section.formulario {
     padding: 80px 4%;
+}
+
+.formulario h1{
+    text-align: center;
+    color: #ffff;
+    font-size: 25px;
+    font-weight: 100;
 }
 
 form {
