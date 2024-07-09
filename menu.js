@@ -34,3 +34,13 @@ function scrollToContato() {
 }
 
 document.querySelector('.button-contato button').addEventListener('click', scrollToContato);
+
+
+document.getElementById("contato").addEventListener("submit", function (e) {
+    e.preventDefault(); // pause submission
+    document.getElementById("hiddenMessage").style.display = "block";
+    document.getElementById("formDiv").style.display = "none";
+    setTimeout(function () {
+        e.target.submit()
+    }, 2000)
+})
