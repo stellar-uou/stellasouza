@@ -1,0 +1,646 @@
+/* Estilo Geral */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@font-face {
+    font-family: 'round';
+    src: url(Cloud-Soft/CloudSoft-Bold\ 700.otf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "round", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+i {
+    font-size: 25px;
+    color: #0D1F2D;
+}
+
+body {
+    background-color: #D1D8C5;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-contato button {
+    padding: 10px 40px;
+    font-size: 24px;
+    background-color: #7E8EF1;
+    border-radius: 75px;
+    border: 0;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo {
+    color: #0D1F2D;
+    font-size: 38px;
+    text-align: center;
+    margin: 40px 4%;
+}
+
+h2.titulo span {
+    color: #7E8EF1;
+}
+
+button:hover,
+form .button-enviar input[type=submit]:hover {
+    box-shadow: 0px 0px 8px #4682B4 ;
+    transform: scale(1.05);
+}
+
+/* Estilo do cabeçalho */
+
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #4682B4 ;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover {
+    color: #4682B4 ;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    font-size: 24px;
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+.nome-logo {
+    font-size: 30px;
+    color: #0D1F2D;
+    padding: 40px 4%;
+}
+
+/* Estilo menu mobile */
+
+.button-abrir-menu i {
+    color: #0D1F2D;
+    font-size: 40px;
+}
+
+.menu-mobile {
+    background-color: #0d1f2d;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu~.overlay-menu {
+    display: block;
+}
+
+.button-fechar {
+    padding: 20px 5%;
+}
+
+.menu-mobile .butto-fechar i {
+    color: #0000ff;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #193a53;
+}
+
+.overlay-menu {
+    background-color: #000000a7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
+/* Estilo topo site */
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site.flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #0D1F2D;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span {
+    color: #7E8EF1;
+    font-size: 50px;
+}
+
+.topo-do-site .texto-topo-site p {
+    color: #0D1F2D;
+    margin: 40px 200px 40px 0;
+    font-size: 22px;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+.topo-do-site .imagem-topo-site img {
+    height: 275px;
+    width: 275px;
+}
+
+.topo-do-site .imagem-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* Estilo sobre mim */
+
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .texto-sobre {
+    color: #0D1F2D;
+}
+
+.sobre div.button-social i {
+    justify-content: center;
+    display: flex;
+}
+
+.sobre .texto-sobre h2 {
+    font-size: 40px;
+    color: #0D1F2D;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .texto-sobre h2 span {
+    color: #7E8EF1;
+    display: block;
+}
+
+.sobre .texto-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.button-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #7E8EF1;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.2s;
+}
+
+/* Estilo conhecimentos */
+
+section.conhecimentos {
+    padding: 80px 4%;
+}
+
+section.conhecimentos .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.conhecimentos .conhecimentos-box {
+    color: #7E8EF1;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+.conhecimentos .conhecimentos-box img {
+    width: 50px;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conhecimentos .conhecimentos-box h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #0D1F2D;
+}
+
+.conhecimentos .conhecimentos-box p {
+    font-size: 18px;
+    text-align: center;
+    color: #0D1F2D;
+}
+
+.conhecimentos .conhecimentos-box:hover {
+    box-shadow: 0px 0px 8px #91bdcc;
+    background-color: #91bdcc;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.flex .conhecimentos-box {
+    padding: 20px;
+    flex: 1;
+}
+
+#mostrar {
+    display: none;
+    transition: all 0.5s;
+}
+
+/* Estilo dos projetos */
+
+section.projetos {
+    padding: 80px 4%;
+    background-color: #91bdccbd;
+    box-shadow: 0 0 40px 10px #91bdcc;
+}
+
+section.projetos .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.img-projetos {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    margin: 0 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008f;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* Estilo formulário */
+
+section.formulario {
+    padding: 80px 4%;
+}
+
+.formulario h1{
+    text-align: center;
+    color: #0D1F2D;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #91bdcc;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #ffff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 180px;
+}
+
+form .button-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .button-enviar input[type=submit] {
+    width: 150px;
+    background-color: #4682B4;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 40px;
+}
+
+/* Estilo rodapé */
+
+footer {
+    padding: 40px 4%;
+    background-color: #91bdccbd;
+    box-shadow: 0 0 40px 10px #91bdcc;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+footer .line-footer-2 {
+    border-top: 2px solid #0D1F2D;
+    line-height: 60px;
+}
+
+footer div.button-social i {
+    justify-content: center;
+    display: flex;
+}
+
+footer .line-footer-2 p i {
+    color: #0D1F2D;
+    font-size: 22px;
+}
+
+footer .line-footer-2 p a {
+    color: #0D1F2D;
+    text-decoration: none;
+}
+
+.nome-footer {
+    font-size: 22px;
+    color: #0D1F2D;
+    text-align: center;
+}
+
+.button-abrir-menu {
+    display: none;
+}
+
+
+/* Responsivo */
+
+@media screen and (max-width: 1020px) {
+
+    /* Classes gerais */
+
+    .button-abrir-menu {
+        display: block;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .button-social button {
+        width: 40px;
+        height: 40px;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* Cabeçalho */
+
+    .nome-logo {
+        flex: auto;
+    }
+
+    .menu-desktop,
+    .button-contato {
+        display: none;
+    }
+
+    /* Topo do site */
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    section.topo-do-site.flex {
+        gap: 40px;
+    }
+
+    .topo-do-site h1 {
+        font-size: 39px;
+        text-align: center;
+    }
+
+    .topo-do-site .texto-topo-site p {
+        color: #89A7B1;
+        margin: 40px;
+        font-size: 20px;
+    }
+
+    .topo-do-site .imagem-topo-site img {
+        width: 100%;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    /* Sobre mim */
+
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .texto-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .button-social {
+        text-align: center;
+    }
+
+    .imagem-sobre img {
+        width: 100%;
+    }
+
+    /* Conhecimentos */
+
+    section .conhecimentos {
+        padding: 10px 8%;
+    }
+
+    section.conhecimentos .flex {
+        gap: 10px;
+    }
+
+    /* Projetos */
+
+    section.projetos {
+        padding: 80px 8%;
+    }
+
+    section.projetos .flex {
+        gap: 60px;
+    }
+
+    .img-projetos {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    /* Formulário */
+
+    section.formulario {
+        padding: 40px 8%;
+    }
+
+    /* Rodapé */
+
+    footer .flex {
+        flex-direction: column;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+    footer .line-footer-2 {
+        line-height: 40px;
+        margin-top: 20px;
+    }
+
+}
+
+/* rolagem */
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    line-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    transform: translateY(100%);
+}
+
+.back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilo botão topo */
+
+.rolagem i {
+    color: #0D1F2D;
+    font-size: 25px;
+}
+
+/* estilo da barra de rolagem */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: #0D1F2D;
+}
