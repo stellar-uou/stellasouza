@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stella Souza</title>
+    <!-- fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <!-- fonte -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="menu.js" defer></script>
+    <link rel="icon" href="imagens/gatinho sem fundo.png">
+
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="nome-logo">
+                <h1>Stella <br> Souza</h1>
+
+            </div>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#topo-do-site">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#conhecimentos">Conhecimentos</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <div class="button-contato">
+                <a href="#contato" class="button-contato" onclick="scrollToContato()"></a>
+                <button>Contato</button>
+            </div>
+
+            <div class="button-abrir-menu" id="button-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="button-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#topo-do-site">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#conhecimentos">Conhecimentos</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="topo-do-site" id="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="texto-topo-site">
+                        <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
+                        <p>Criatividade e inovação andam lado a lado. Com uma combinação única de desing impactante,
+                            funcionalidade intuitiva e otimização para resultados, estou pronta para criar a presença
+                            online dos sonhos.</p>
+                        <div class="button-contato">
+                            <a href="#contato" class="button-contato" onclick="scrollToContato()">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="imagem-topo-site">
+                        <img src="imagens/gatinho sem fundo.png" alt="gatinho em pé">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="imagem-sobre">
+                        <img src="imagens/gatinho sem fundo.png" alt="gatinho">
+                    </div>
+                    <div class="texto-sobre">
+                        <h2>MUITO PRAZER, <span>SOU STELLA SOUZA.</span>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae accusantium amet tempora.
+                            Repudiandae numquam vitae animi aliquam, ex quia neque optio eaque nobis tenetur. Corporis
+                            enim suscipit accusamus optio obcaecati?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ullam praesentium
+                            rerum accusantium, voluptatem odio id hic, consequuntur minima ut corrupti natus ipsum
+                            molestiae dolores. Unde porro amet harum maiores.</p>
+                        <div class="button-social">
+                            <a href="https://discord.gg/fFyMmpEU"><button><i class="bi bi-discord"></i></button></a>
+                            <a href="https://www.linkedin.com/in/stellasouzavieira/"><button><i
+                                        class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/stellar-uou"><button><i class="bi bi-github"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="conhecimentos" id="conhecimentos">
+            <div class="interface">
+                <h2 class="titulo">MEUS <span>CONHECIMENTOS.</span></h2>
+                <div class="flex">
+                    <div id="passar_mouse" class="conhecimentos-box">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADGUlEQVR4nO2YPWgUQRTHZ2dzM5dYaCFBAiaFNkZRBMUuiI0fRdBCwSZFolj4kWCSmRMJhyksBJVgI2qhhYIpFEREczPZmUSDSBo/kIAERWMnETQmSDRPdm89g4TczCXrXnD/8Jpr9vfb92Z25hBKkiRJEoTAQTy3GWcEd7i8i7l4hZkYx0x+x1xMYi4+YCaeOlxecrncgbJZXD5vrUNsDIC5BNNyuHiITnor40ZHKHuvCjM5ZgNfKCaHYu+Ey/p3lgQflpvJ7YpVAHPZHL7NMXRK1COeq8VcvrAYpe54BZhoy4PIa39+k13mAvJiWQgUOtAu6+w6IMtEoMRyEoGYu+SEHQBN2kBTmFVToOkzUGTfUhWAoBSdAU0Plf70jLfW4fJy+KWdWMi8lySgg/oKMl1nze52ykbM5LfFhi5BAEDRs3b0+e1w0d/4HALnzQTIqBW/w0VP1PBBMXEsEFDk9LwCfnlVq4wFMBNvohcQn1H7o+p8B+jtogKK7DGjb/VWYC5mIhaY8A+CyId/sqw6WKjFBVrNBHhuezTjIn9iJt87TF5FHXLN78eBpreKwufrjNn4ZORBy1EYwVw2oc6+muBmZhgAhEHRC4bw/k50zkyAi6Pmu4i4iY4/oKbQhZFRqQOg6LAxfH6EuJkAEy2GW2A/ynoVAdTjyhrQtAc0eQua/rAC06YC6SYjAbdT7DWZZ8T61gXwXsUW0ORTJNB6Vg2mNpn1mMn1BgJDeXiUBk3eRQ6v6CQMo5SZwP5et9hX2OHiSiCgSGPk8DqoO8gmDhPS6AyjyIl/AD/tj6mVAGbiiJFAsTPMYsAr2oysw3PL5/u/J2KBKdD0NShy3XzhzhGXid2YiemSBRSN98IehMsGf7//+16wdASKZMEjpGKW/M8EyBgMkHrQ6dWg6POlJ6BI4e9H0KSrTARoi4XAR/BSG2AwXQuavgwFuuMVCEZiAWvAo4djFTC+z869gL9YXdQjExhGVaDJDTt4Mgo63YDKKaAqtvrXPlBEh0fsifAsMw6KjoCi90GRLAxUboNe5MbNmyRJElQe+QWgfIcmva+j+wAAAABJRU5ErkJggg==">
+                        <div>
+                            <h3>Python</h3>
+                            <p>Intermediário</p>
+                        </div>
+                    </div>
+                    <div id="passar_mouse" class="conhecimentos-box">
+                        <img
+                            src="data:image/png;base64,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">
+                        <div>
+                            <h3>Java</h3>
+                            <p>Básico</p>
+                        </div>
+                    </div>
+                    <div id="passar_mouse" class="conhecimentos-box">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFXElEQVR4nO2ZfUwTZxzHz5ltyZIt25Jlf+yf/YHpoZI4etcXJAKC0BYprzdaSsHJ65huE5OZbEai2ZzJYpS7qhScEXUZa6WtHaswWnAzmeB0EDcWdVZI3PBlE0StYKn9LU83Xyj2ri8H9A++yS95crm75/N97vf7PU9yGDaveUWfslT21zPV1h9UlY4Hqiq7R6G2OGSU4TUs2kVRsFD2tllXWGn3FL93Ap4MVWWnR15oPryYMjyHRaMUqtb1BWs7XP7g/lFQ1j4uo8ybsGhROtUqyym1DXOB+0dOie1mep45Zw7BDTGrNdYzmhDBnwxNTTcotW0XM/KNS2YNXKaxvbRabW1VV9u94YL7R1F1lzez6FhnUrb55RlEhwUKlWUbVfm9my/wYr8orOiczCyy6Ovq4Ble0Vflm0rz3mkf4wLYvOMMmG1D8PvFUfjrmgsm7nt8gcbomsk25LuH6z35a9vvygpaayIGT1NbE7NLvnOyTaZddwLo/QNw9fo9CFbD11y+Z7Tr2I3klh6/Jis0pocMTlHtr2ZprD2oyNgmqK3rhUuDYxCu/rg8Bhu29HAWOmJRKi0vBm0gp8Q2xPWZt+3sg7HbbohUd+66YXt9P+tcCrUVRKu+Oh+0gaKaLtYXfra7HyY9XuBLkx4vfLqrb3oKrWkHqawFpHIjSGUGCNoAG/yHW3rg9p3IV/5pX6K2rtc3h6rKASuyDCCRGf6D9xkwRm4AFV0kOc+lC84xSMs3gTjjm8fgfBpAnYNLqC6M1svwyednoGzDSV+gsfHbQdYvN3D+JlTUdk0H58sAWn3U/tjU+8sNKN94MmD6VWw8Caf7bkx55vrf92DrF6chQREAnC8DaAPigufq6w8XApkYn/DA/iMDkJxtYgfnywDaYdnShm3l/fu6QnUMlMVtwYHzZQAdBQIJ5Xww8KifizP+b4uhhixCA2xHhY+3s59v8tZ0PO7n4YYsQgMoZwOpvPbp6aOq6prez+fMwDiLAb/8R3kuL7TA0uUNsGzFAX4MyGcwhVCff3ifUtsG8UlNgJPMo4gV6+CtlIMglRvmzsDAhcBFfLRtEKiyDkjIODQF3D+WSPaBMPXw3BgwsbTR0VsTIFrZyAr/ZIhWfgllH9hn1wDXRtbhuASxIm74xWId2E84wesFcPx4BQrWHp8dA8EcJZAJIlkfEJ5M0UNnt3PKM5OTD8Bic4JcZZ1ZAyh27u0HLt0cuQf1DT2Qp22B+KQGECbpfWNa3wMjo+MBn7t95z7sOXAOEjKP8m9AXe2AZGULLJHooP/XqzBTOts/DIsleyA+5ZCv70duoKYbMigTxEn3PUqDVGWzb5X51uitcUjPfdzFlkobgEg7Ep6Bone7Iau4DZatmNrPH4a2ygRud+CNLVS53R7QVLQ+da645U0gSm8BSSgGyNSDZq5uUlR+FP7h4UuM3hqH0mozR/fSQVxiU1fQBoRC/bMCkt4qIGkX24vTspuh79zViHI+VdnMCo8YEEtMTP3zWKhaJNn3Bk7SepygPYEmQL3//U02cA6OBA1+aXAE1n9k41h12osTjEEg3vUmFqlwIROPk3Q3V1rlFreArrEXTv18xWfI5XL7Ao3RNaaxF3I0X3NudgKCOYWTjBTjW7EEnSYg6N+CPTKEGgKCuSgQMRQ2k0L1gRNMJU4yN/gDp0dwktkUVp6Hq7jEva8ICHoHTjITYYOTtBvVWMyy+rn7ARgr3r0IFZuv6EKCZzpjSd3s/ZnhEi6qlwgI+qcgVv0sTtQnYdEpWICKECeYwWnwBP0nqh2MMizEol1Cof4FAUlvxknaiQKN0bW55prXvLDp+hfbmoxip87ScgAAAABJRU5ErkJggg==">
+                        <div>
+                            <h3>C</h3>
+                            <p>Intermediário</p>
+                        </div>
+                    </div>
+                    <div id="passar_mouse" class="conhecimentos-box">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADtklEQVR4nO3ZW2xMQRgH8L+oJogHxAPxghc8iMsDbyWoiHQ7s7UlrkFtUQ0pIUKIS0IqEtdQQVwiLhFEJG4JD3WL4EG0IajbnnO2u92DaovSjmxX9HycadeZYRPZL5lkk8k5Z357vpn5dhZIRzrS8f+GwVFncohUNoPho3cAw4uUAzieqwDupBpgctz2DDA5zqsOQBT/eWuYR+5xTgWwPxWAujnkHmWeAQbHxlQAameRSbxBBVCcCsD7GQSw2DPAYshPBcCe1nq9xRHwDsjFaNnArBndhW3b7bakYtNAAohOdTyLIcszwGQYJP12J2cIOxbTA1jViwCqA44U8mOgZ0CIoWdb6WFbIXVAc7MQSzIIwMprfcabAHp4Bgigg8HQKAPEqirVAfU2GXxzEZnAjfExQCVMDkMKqLhLBmsV9lOexN8WkvwPKQ2+BcDwUAq4f5UCSoYrAxoLCeCBDsBlGaCm/AwBhNeOUwZ8mk9S6JIywGA4IgVcOUQA1aX5yoD6uQ4Ax2EdgK0yQPT8dvVJfGM7AXycTQClygCTY7kUcGKDOuDSegL4MNPxDD+W6QDMkgEih5arA86WEMC76QQwUxlg+DFBCtgdVAccn0sANY4ywmDIVgaE8jDMSxEnncT3jlHAAT/pj+S3XhvKxVBlwGsf+mgFPL5IAbvGkv6wo4yIcPRWBogsZBgMTW6Dq16dRdIlevNc+4CqWxRQOoL0O1agZhFEJ+gIk6PGDRBeMoQAah6Vtw8IV1LA+gE/+5oWkWuj0BUGR6UbwJrXlwBioZcivC5bWIHM3wFLM4XYN0mIhnfSUvrrAvIGKnQCbrjm+NQuritP7G2ViF7YJcJrxgixJ1uIOwcTVadbLO30E/A5SFag6zoBp2ST1I5Y3pfRL3UkvRoKSCF3UhvAZNgp3Y3PbmtJnT8GxFOpfK/8OIVhh07AmjaXy7yOIrxilIic3ixir57KAfE0undUiLKcxJwo/uU4xVEHmQyrtQEMhvlJr/0OjP3qiRD1sTYHLWTHKRwFOgG5njayyRm//d5N9jglxOHTBghzjNK2E8t+Si6CiDhOIywfRuoD+NH/bwAaCxP1f3SKyx6Tg37aANZ4dNUBaCqC+FSQKJmdNY/ptkmOR1fojJa3wBA0OE4bHLXJAr4EE4e1UUeV6doYGkyGawbHStOHwfib8SaAziE/xpkMW0yO+17fjpH4B6gsfv4Z9aEbUhVJv51/+S2rvB2TYeKP3ftZS4t/ZpgY7/N843SkIx3/Z3wHrTGmPWk4PzUAAAAASUVORK5CYII=">
+                        <div>
+                            <h3>HTML 5</h3>
+                            <p>Intermediário</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div id="passar_mouse" class="conhecimentos-box">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEEElEQVR4nO3YSUwUQRQA0J5qF4zx4JK4HEz04HrRg3G5aIxr4nJRb+pFOelBYaoaVDSgkcUVN0Qxbgfxoh5QYKp6RBQXkIjKMuAoiAziMKCCKCiU6THQXTgtM12lk5j5SSVkuqu7Hr+2LkmKRCQi8f8GQKQdIELDWiBusw6AxB12AMKvODKAH4YdAEmRZYAN4pu8DZDPNYRejlb21bchcsM6AOHMsAAOvdABEJ/lyUBSOAAgucyQAZxoGQAQ2R4WwIGnhjGAt1kHQLIhLIDEx3p9hay3DJCQY5FZw6alPqAtLS0DlmBizOVGFpHwoO89kl1daB0A86ebAcYm3hMC6KGUDjnfLwO7C3VAnHOadYDiGG0GGBKnUp+PH/Cxs/v3LhTn1AE7ckdZB0jUBhDuMkO88Xi5AbVtP1jA2XrDO3CX1gYOgH8mahA5iKdmNzGAMl8Xe8/pN4YZiLzjarwfAEmpSMD8W14GUODpZLvPCbex/lNugA3hXJGAVbk+BnCr9it7zzGXYRUmd/gBEF8SCdjsZMfFpeov7D2Hyw2rMLkoIgNpwTY21eEKeRAff9HOAlKeGzKAU7kBAJLYYAEJOZUhAxJLP7Nj4GCpcRaK4QcgsilYwM6bL0MGxD76xAKSivVn2slGboAM1eXBAqKvPw8ZsKWglQXse6iPH4Us4wZIyDFb5CC+WtPBANY5fOw9e+731ZVinbP4Afb8CSIBOW+/MoClOc1sBuLv6oD4gvH8gL3OQQCS7kCNm5nG7kgLqxoGBBS972QAc2580K9nvqNAUXsHcI8UXTKYH/BrJmoOBJh4oJABlLgbBwRUtH5nAFOym/TrGXXGGcgrpPF+ACIVgQAj995lALWNXro8s5hGxeu7yd7GDcvy0NW5Ptra2c0Axl3RvwXAqdf68yEpFwawQeIMBBhssqV+7fHSkwWv6OIzT+iK2830gusLbfnGNrw3orI8egbSq42rsCoOgHC22SCtb2q2vJ1u/97DdrEjhuMUSK6JA0CcbgY4olb/8bvALLSulFHRbxuRZjhOQfi4MABAZPefpkqtKy048Zgm57uoq77JFKB1oys1HXRtns8/JuT+X2IpzwxjAO8SB4Bka7DzvhFTVf+B+gZotGx2nILwFmEAGalrrSxi2nfz0CyLxyl2skYYQILOeaJWYtNypo7dRijqXHEAxTFZOEBbdU+6qZxS9uscSGHrSTF5k8QBYvKGCwFk1FH5aBUF+4spMCx2IEDR3ikJDS0Lihptg+Q6QPhz0Ij0GgqSn1E5Qe8egQvusEHiAApGUhyeIf3V2FE0TFYcS2yQJAOIS6xmB0Di1o7P/eef9vsjpLBF0Nn5l/9lnuxAvNK/ekNcoxXtb+037Zrl50YiEpH4P+Mn9Q+e3CSBSHQAAAAASUVORK5CYII=">
+                        <div>
+                            <h3>CSS 3</h3>
+                            <p>Intermediário</p>
+                        </div>
+                    </div>
+                    <div id="passar_mouse" class="conhecimentos-box">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACKElEQVR4nO2WT0hVQRTGz/GZ7yEiRJJ/SsMiRaigUFwUhQgGouLChZS5Cmmj5c4kol1tRNoYLcJ0JRKUFYmUJi5EQSP/dEFxkUW4iQyUIMS+mHe5jtN7ihLeO8L54OPBmXmX+c2c+90hEolEIisFh2CTSQAcOQFIC+1GQbcM5CV2gt91SIw6we885EPm2GHarYJeMATACX7XIS3k/M+O8YZ7282xmT5CbTkjI42RGGJkHWbUVTJmX+4DgMFOQiSsx2iTkyMcHbcWYH2WkHtU18NJjILj7q9XKz7D+PPJUoCPz3U9IYEx/cKtLw4STmQzbl5jrExYfALDXbqu2uj3lJ7/64NlKRQP4MuQWa8uZXx+t9PnWQCgfPmC+eJGwozrNYz5/n0C8G2YcLYgNoFCIRdkddJyAGW1yNYGRkpyLMjpPMaPMcsBPH8fJdxvJqQfMiEar3KwACrvtwP4N+d/jlM0/7352Rk+AqgUqSphvH6kawsDJsCrDj3W/YBQeCo279tb9H+SDvgE0NNG0c+/lya36hkddwnnz5ktoe4+ar66/3i1kmLG1yG3vjxOuFSkx9TX2heAuTcaYCufPKavBg9bzZNhZhxJN68SyrcbfGyh908JqSnxF69a4e0Ts/fv3Nge+GJh/CjdMwDlpRFCUx0jJ9PNc3VNriljTD6LP3+sh3ClgpGf6+7+wVR34Y/vEdZmtkq1PQTwwyQAjpwAfG0hkUgkIj/0FxH0JVVHu8XgAAAAAElFTkSuQmCC">
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Básico</p>
+                        </div>
+                    </div>
+                    <div id="passar_mouse" class="conhecimentos-box">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVUlEQVR4nO2ZTWsUQRCGO4lehUCURFO1y+pBEPSQo6BXQUmqNsxBvEp+gAdzDOrVg4IYxIMifuRfBSGeIrJO9SZExJZ2JmFol52P3emZCVNQMAzbve8zXV01Na1Ua6211pprRqkZzbgpjN+s22t7TzVGPMErzWiSLgRvzZaaVU0Ur5sAYVLE1x4i7HeuCqNOA/gHwbhdmz1hNlbODggu2+uwv3yrURAmUHOa8Itm/DEkXIkg8KZmCDNBUIXhFImHTwlBzYEwt9UZTbgzQtC+rF+6bn+juXtD1uGahdIEz4Xwdy3Cydgnz/h5zFPdP+h3O+44IXha+Z4wUdh8TAuLwV2cd8ceBD2sdGObQM0JwYcscR3eW1pwx3+/c+VcZdnJbKlZYXyfRUC8MR+5c9hUW0mKNZH4d1nFxwC/7Avcifg4pLzXCaPUjJ0oj/ikH88jBF8P+9jzmmJN9Er8uqj4JEAsxh+EiZ78m0nEuwBRWMDu4VqnW3qd0Iybk4ofBXAMoRmX8tYJndhTqRZ3UaUARBC9C3nrhBDu1QZgVJ0Ig8XzUwMoM4Rif+j+55BwY+x8a/jYW/pMBSAYCC3ft72EdWF8oBl+TrUmTANizArEYQFH1ksraFn73KIA2kevUGQlhPGPZnxxAkDwMr6XZ47t6b0P5YQQhifuHMLwrBLxhSCCzqJybLgKFysTnxeiSJ7X3rqybBC587x47YvTIHzkeR8rUXqen9QmrRNSh++kRSFqIb4oRK3En5rP640/4DgVR0z/HfIR7lm3zUjlZwGttdaaqqX9BXBaAh7aBFdkAAAAAElFTkSuQmCC">
+                        <div>
+                            <h3>Git</h3>
+                            <p>Básico</p>
+                        </div>
+                    </div>
+                    <div id="passar_mouse" class="conhecimentos-box">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAADlklEQVR4nO2aS0hVQRjHfz3MspdpSTejqLRCMQjEXVERhQW9DEIjMrIXZLbpuSh3URRp0C6iRYtWtWgRRpsgE5MeS1OKaNFT7WUPTSsG5sLtcM89M3POmXuj84PZXOZ88//fM3fmm28uRERERET8v0wHaoBmoAXoBvqAQdn65Gctsk+1fOafIh84AHQAvw3bA6BexspYZgJNwFcfRp2tHzgPFJJBZAENwJcAjTqb+BIbgex0m10APAnRqLM9Buany2xVyG/VrX0GNto2Wwv8TIPZeBsC9toyuyeNRp1NrOShT+OhDDCa+KY3hGW2CPiUASadTawjC4M2O0ZhNT4DTAAWAceB1wGYeQUcA8pk7LMu/R7J7TEwjiqIK3U8ky33zmHDqXoyyb5bluKZQ0GZLZQZj5fIPJfn1wNdwGVgG1AOzAJyZJsNVADbgSsyt17nEmuqx9SOBWG4SfGtjCV8xnloOOd3gHyN3Hgu4VPkoaHf74GjXuN3t5LwWa2gY7+fATo0DJ8gfBoVdLSbBo8BvzQM1xE++xR0CM0FJsGrNcxewx43FPRsMQncrGj2uzz820IsjgMemkTRQJsWRcOXsM9VD023TII+UzS8BvtUeWgSyYs2vYqGA8luDKZ1Kk3vTYIOKK6Io7BPjoeuHyZBBxXf8GTsE/PQJLRr80HRsPOUZINyD01CuzbdioZFidY2Rzw0PTUJelvRcBt2GSHLtak0Ce3aqCYeom3CHlsV9JwyCVyjYfgdUIyd4+FbBT2VJsFnaB4eukK+FSgBniuWhyaZDtKuYTh+K1AX8N48Wp6SVAsR9/0M1qBpOPFt75Y1KFMKpFHVFDfexK2IMVOAb4am49PrHnBaChHT0o0S2Uf0bTWsdvbIulcoRbwKYC3QqbF9FXpkT20+vtx4bdw3MZcybaf8e0KeQpFeTPFcxRn10tBsj8+f0F8cdhnkesLvrSuFmKWos8LQcKAlpizgYZJBxLa1WPaZI4sG/QmF8ReyuK5Lq6ZZ0X8kAVMstx3nYBeCHgjYoZn0hFYTr0xyES5OJuMDHqdU0aw4sy8jZHYlycAuBjxGtoLZYZlXW2Fnkovxm8ByxdVYBa9K6WYss0qxSGCKWzxRa1tCmpinkCyYkizWHUuXdp7J/UHgY4iGe2XaKQ7/GcM0efB2bl2miGffyEu6wDKoMJgoV/K7cmHLNZw1tZnwV0Nd8mQNOSIiIiIiAm/+AD7o8u7sS+G2AAAAAElFTkSuQmCC">
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>Intermediário</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="projetos" id="projetos">
+            <div class="interface">
+                <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
+                <div class="flex">
+                    <div class="img-projetos" style="background-image: url(imagens/gatinho\ sem\ fundo.png);">
+                        <div class="overlay">
+                            Projeto 1
+                        </div>
+                    </div>
+                    <div class="img-projetos" style="background-image: url(imagens/gatinho\ sem\ fundo.png);">
+                        <div class="overlay">
+                            Projeto 2
+                        </div>
+                    </div>
+                    <div class="img-projetos" style="background-image: url(imagens/gatinho\ sem\ fundo.png);">
+                        <div class="overlay">
+                            Projeto 3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario" id="contato">
+            <div class="interface">
+                <h2 class="titulo">FALE <span>COMIGO.</span></h2>
+
+                <form action="https://formsubmit.co/stella.souzavieira20@gmail.com" method="POST" id="formDiv">
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required>
+                    <input type="text" name="email" id="email" placeholder="Seu email:" required>
+                    <input type="text" name="telefone" id="telefone" placeholder="Seu telefone:">
+                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem:" required></textarea>
+                    <div class="button-enviar">
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </form>
+
+                <h1 id="hiddenMessage" style="display: none">Formulário enviado!</h1>
+            </div>
+        </section>
+
+        <footer>
+            <div class="interface">
+                <div class="flex">
+                    <div class="line-footer">
+                        <div class="nome-footer">
+                            <h1>Stella <br> Souza</h1>
+                        </div>
+                    </div>
+
+                    <div class="button-social">
+                        <a href="https://discord.gg/fFyMmpEU"><button><i class="bi bi-discord"></i></button></a>
+                        <a href="https://www.linkedin.com/in/stellasouzavieira/"><button><i
+                                    class="bi bi-linkedin"></i></button></a>
+                        <a href="https://github.com/stellar-uou"><button><i class="bi bi-github"></i></button></a>
+                    </div>
+                </div>
+                <div class="line-footer-2">
+                    <p><i class="bi bi-envelope-fill"></i> <a
+                            href="mailto:stella.souzavieira20@gmail.com">stella.souzavieira20@gmail.com</a></p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="rolagem">
+            <div class="interface">
+                <a class="back-to-top" onclick="scrollToTop()">
+                    <i class="bi bi-arrow-up-circle-fill"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
